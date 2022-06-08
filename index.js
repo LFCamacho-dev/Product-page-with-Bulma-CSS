@@ -26,6 +26,19 @@ tabs.forEach(tab => {
     })
 })
 
+//modal
+const modal = document.querySelector('.modal')
+const modal_background = document.querySelector('.modal-background')
+const signup = document.querySelector('#signup')
+
+signup.addEventListener('click', () => {
+    modal.classList.add('is-active');
+});
+modal_background.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+});
+
+
 
 
 

@@ -12,7 +12,8 @@
             <!--logo / brand -->
             <div class="navbar-brand">
                 <a href="" class="navbar-item">
-                    <img src="assets/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2">
+                    <img src="assets/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2 mr-2">
+                    <h1 class="title">Coffee Creatos</h1>
                 </a>
                 <a href="#" class="navbar-burger" id="burger">
                     <span></span>
@@ -56,7 +57,20 @@
         <div class="column is-4-desktop is-12-tablet">
             <div class="is-size-4 mb-4">$10.99</div>
             <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, facere.</p>
-            <button class="button is-primary is-rounded">Add to cart</button>
+            <form>
+                <div class="field">
+                    <div class="control mb-6">
+                        <div class="select is-dark">
+                            <select>
+                                <option>Small (250g)</option>
+                                <option>Large (500g)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="button is-primary is-rounded">Add to cart</button>
+            </form>
         </div>
       </div>
     </div> 
@@ -98,7 +112,7 @@
                     <div class="message-body">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit animi, ullam exercitationem eius repellat quis laudantium ducimus enim asperiores qui aliquam velit iusto magnam delectus praesentium aperiam itaque soluta modi.</p>
                         <div class="has-text-centered">
-                            <button class="button mt-3 is-fullwidth">Sign Up</button>
+                            <button class="button mt-3 is-fullwidth" id="signup">Sign Up</button>
                         </div>
                     </div>
                 </div>
@@ -106,11 +120,100 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section is-hidden-mobile">
     <div class="container">
         <h3 class="title has-text-centered is-size-4">Related Products</h3>
+        <div class="columns mt-5 is-8 is-variable is-centered">
+            <div class="column is-4-tablet is-3-desktop">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6">
+                        <img src="assets/p1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>$12.99</p>
+                        <p class="title is-size-5">Cortado Cup</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="" class="has-text-grey">View</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4-tablet is-3-desktop">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6">
+                        <img src="assets/p2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>$12.99</p>
+                        <p class="title is-size-5">Docker Light</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="" class="has-text-grey">View</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-4-tablet is-3-desktop">
+                <div class="card">
+                    <div class="card-image has-text-centered px-6">
+                        <img src="assets/p3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <p>$12.99</p>
+                        <p class="title is-size-5">Coffee Crush</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="" class="has-text-grey">View</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<!-- Modal-->
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-light py-5 px-5">
+        <h3 class="title mb-6">Join the Club</h3>
+        <form>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input type="text" class="input" placeholder="Name">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input type="text" class="input" placeholder="Email">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" class="mr-3">I agree to the <a href="">terms & conditions.</a>
+                    </label>
+                </div>
+            </div>
+            <div class="mt-5 has-text-centered">
+                <button class="button is-warning">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer has-background-light">
+    <div class="content has-text-centered">
+        <p>Copyright 2022 | Creatos Studio</p>
+    </div>
+</footer>
 
   <script src="index.js"></script>
   </body>
